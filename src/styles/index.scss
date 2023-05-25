@@ -2,6 +2,8 @@
 
 @import './mixins';
 @import './variables';
+@import './header';
+@import './form';
 
 html {
 	font-size: 16px;
@@ -18,43 +20,20 @@ html {
 }
 
 .form {
-	&-header {
-		@include setFlex(flex, center, space-between, initial);
-		.logo {
-			@include setFlex(flex, center, space-between, initial);
-			&-circle {
-				height: 3em;
-				width: 3em;
-				display: block;
-				background-color: $blue_bg;
-				border-radius: 50%;
-			}
-			h1 {
-				font-weight: 600;
-				font-size: 1.75em;
-				margin-left: 0.6em;
-				color: $text_one;
-				.light {
-					font-weight: 300;
-				}
-			}
-		}
-		.timer {
-			font-size: 1.35em;
-			font-weight: 500;
-			&-box {
-				background-color: $dark_bg;
-				color: white;
-				height: 1.9em;
-				width: 1.3em;
-				@include setFlex(inline-flex, center, center, initial);
-				border-radius: 4px;
-				margin-left: 4px;
-			}
-			&-divider {
-				position: relative;
-				right: -2px;
-			}
+	.btn_submit {
+		background-color: $blue_bg;
+		width: 100%;
+		padding: 1.2em 0;
+		margin-top: 0.75em;
+		box-sizing: border-box;
+		color: #fff;
+		text-transform: capitalize;
+		font-size: 1.2em;
+		font-weight: 500;
+		border-radius: 0.6em;
+		transition: all 150ms ease-in-out;
+		&:hover {
+			background-color: #0645b2;
 		}
 	}
 }

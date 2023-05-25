@@ -1,0 +1,113 @@
+.form {
+	&-body {
+		form {
+			.input-group {
+				margin-bottom: 2em;
+				.label {
+					@include setFlex(flex, center, space-between, initial);
+					margin-bottom: 1.8em;
+					.description {
+						.title {
+							text-transform: capitalize;
+							font-size: 1.1em;
+							font-weight: 700;
+							color: $text_one;
+							margin-bottom: 0.4em;
+						}
+						.desc {
+							font-size: 0.77em;
+							font-weight: 500;
+							color: $text_two;
+						}
+					}
+					button.edit {
+						@include setFlex(flex, center, space-between, initial);
+						color: #1da1f2;
+						svg {
+							height: 0.9em;
+							fill: #1da1f2;
+						}
+						.btn-desc {
+							display: block;
+							margin-left: 0.6em;
+							font-weight: 500;
+						}
+					}
+				}
+				.main {
+					position: relative;
+					margin-top: 1em;
+					img {
+						position: absolute;
+						top: 50%;
+						transform: translate(0, -50%);
+						&.leading-icon {
+							height: 2em;
+							left: 1.2em;
+						}
+						&.trailing-icon {
+							height: 1.5em;
+							right: 1.5em;
+						}
+					}
+					input {
+						border: 2px solid $input-border;
+						width: 100%;
+						padding: 1em 4em 1em 4em;
+						font-size: 1.2em;
+						font-weight: 600;
+						border-radius: 6px;
+						background: linear-gradient(45deg, #f7fafb, transparent);
+						color: $text_one;
+						&:focus {
+							outline-color: $active-border;
+						}
+						&::placeholder {
+							font-weight: 400;
+							opacity: 0.5;
+						}
+					}
+				}
+				&.__col {
+					@include setFlex(flex, center, space-between, initial);
+					.grp {
+						@include setFlex(flex, center, space-between, initial);
+						width: 400px;
+						.divider {
+							display: block;
+							margin: 0 0.8em;
+							font-size: 1.2em;
+							font-weight: 800;
+							color: $text_one;
+						}
+					}
+					.main {
+						margin-top: 0;
+						width: 400px;
+						input {
+							padding-right: 0;
+							padding-left: 0;
+							text-align: center;
+							background: none;
+							color: $active-border;
+							&:focus {
+								background: #edf3ff;
+							}
+						}
+						input[type='password'] {
+							text-align: left;
+							padding-left: 1.5em;
+							letter-spacing: 0.3em;
+						}
+						.trailing-icon {
+							opacity: 0.35;
+						}
+						&.__date {
+							width: 42%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
