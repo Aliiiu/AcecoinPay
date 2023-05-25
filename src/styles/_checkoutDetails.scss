@@ -1,0 +1,108 @@
+.checkout {
+	.checkout-details {
+		background-color: #f0f3f8;
+		height: 82%;
+		width: 100%;
+		border-radius: 1em;
+		position: absolute;
+		bottom: 0;
+		.purchase-data {
+			position: relative;
+			top: 15.5em;
+			padding: 2em;
+			.data {
+				@include setFlex(flex, center, space-between, initial);
+				text-transform: capitalize;
+				font-size: 1em;
+				color: $text_two;
+				margin-bottom: 0.7em;
+				.title {
+					font-size: 0.85em;
+					font-weight: 500;
+				}
+				.value {
+					@include setFlex(flex, center, space-between, initial);
+					img {
+						height: 1.5em;
+					}
+					.inner-text {
+						color: $text_one;
+						font-weight: 700;
+						margin-left: 0.6em;
+					}
+				}
+			}
+		}
+		.divider {
+			position: absolute;
+			bottom: 9.4em;
+			width: 100%;
+			border: 4px dashed #cbcbcb;
+			display: flex;
+			align-items: center;
+			.left,
+			.right {
+				position: absolute;
+				height: 2.65em;
+				width: 2.65em;
+				background-color: #fff;
+				border-radius: 50%;
+			}
+			.left {
+				bottom: -15px;
+				left: -25px;
+			}
+			.right {
+				bottom: -15px;
+				right: -25px;
+			}
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 2em;
+				background-color: #f0f3f8;
+				bottom: -30px;
+			}
+		}
+		.purchase-total {
+			position: absolute;
+			bottom: 2.4em;
+			width: 100%;
+			padding: 0 2em;
+			@include setFlex(flex, center, space-between, initial);
+			.total {
+				.desc {
+					color: #8e96a3;
+					font-size: 0.9em;
+					font-weight: 500;
+				}
+				.t-amount {
+					@include setFlex(flex, center, initial, initial);
+					color: $text_one;
+					.amount {
+						font-size: 2em;
+						font-weight: 700;
+						sub {
+							font-size: 0.6em;
+							position: relative;
+							bottom: 1px;
+							font-weight: 500;
+						}
+					}
+					.symbol {
+						position: relative;
+						top: 4px;
+						font-size: 1.1em;
+						margin-left: 0.2em;
+						color: #8e96a3;
+					}
+				}
+			}
+			img {
+				height: 2.6em;
+			}
+		}
+	}
+}

@@ -1,0 +1,106 @@
+.checkout {
+	position: relative;
+	height: 100%;
+	width: 90%;
+	float: right;
+	.blu {
+		display: block;
+		height: 1.5em;
+		width: 5em;
+		background-color: $blue_bg;
+		position: absolute;
+		top: -7px;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+	.credit-card {
+		width: 16em;
+		height: 23.4em;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), #fff);
+		backdrop-filter: blur(15px);
+		padding: 2em;
+		border-radius: 1em;
+		box-shadow: 0px 4px 14px 2px rgba(142, 142, 142, 0.15);
+		position: relative;
+		z-index: 99;
+		left: 50%;
+		transform: translate(-50%, 0);
+		overflow: hidden;
+		&__head {
+			position: relative;
+			@include setFlex(flex, center, space-between, initial);
+			margin-bottom: 8em;
+			img {
+				height: 1.3em;
+			}
+			.chip {
+				height: 3em;
+			}
+		}
+		&__body {
+			position: relative;
+			color: $text_one;
+			span {
+				display: block;
+			}
+			.holder {
+				text-transform: capitalize;
+				font-size: 0.95em;
+				font-weight: 600;
+				margin-bottom: 0.5em;
+				color: #616161;
+			}
+			.card-digits {
+				display: flex;
+				margin-bottom: 0.5em;
+				.hidden-digits {
+					@include setFlex(flex, center, initial, initial);
+					margin-right: 0.5em;
+					.circle {
+						height: 0.4em;
+						width: 0.4em;
+						border-radius: 50%;
+						background-color: $dark_bg;
+						margin-right: 0.4em;
+					}
+				}
+				.visible-digits {
+					font-size: 1.1em;
+					font-weight: 700;
+				}
+			}
+		}
+		&__footer {
+			@include setFlex(flex, center, space-between, initial);
+			position: relative;
+			top: 1.4em;
+			.expiry {
+				font-size: 1em;
+				font-weight: 600;
+			}
+			.logo {
+				height: 2.5em;
+			}
+		}
+		.card__design {
+			width: 700px;
+			height: 700px;
+			border: 1px solid #ebebeb;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 3.5em;
+			left: -6em;
+			z-index: -1;
+			.inner {
+				display: inline-block;
+				width: 500px;
+				height: 500px;
+				border-radius: inherit;
+				border: inherit;
+			}
+		}
+	}
+}
