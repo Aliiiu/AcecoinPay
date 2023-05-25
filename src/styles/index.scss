@@ -16,3 +16,45 @@ html {
 	padding: 3em;
 	padding-top: 6em;
 }
+
+.form {
+	&-header {
+		@include setFlex(flex, center, space-between, initial);
+		.logo {
+			@include setFlex(flex, center, space-between, initial);
+			&-circle {
+				height: 3em;
+				width: 3em;
+				display: block;
+				background-color: $blue_bg;
+				border-radius: 50%;
+			}
+			h1 {
+				font-weight: 600;
+				font-size: 1.75em;
+				margin-left: 0.6em;
+				color: $text_one;
+				.light {
+					font-weight: 300;
+				}
+			}
+		}
+		.timer {
+			font-size: 1.35em;
+			font-weight: 500;
+			&-box {
+				background-color: $dark_bg;
+				color: white;
+				height: 1.9em;
+				width: 1.3em;
+				@include setFlex(inline-flex, center, center, initial);
+				border-radius: 4px;
+				margin-left: 4px;
+			}
+			&-divider {
+				position: relative;
+				right: -2px;
+			}
+		}
+	}
+}
