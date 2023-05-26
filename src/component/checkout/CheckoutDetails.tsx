@@ -21,7 +21,7 @@ const CheckoutDetails = () => {
 				<div className='left'></div>
 				<div className='right'></div>
 			</div>
-			<div className='purchase-total pb-6 md:pb-0 pt-6 md:pt-20 lg:pt-6 px-8'>
+			<div className='purchase-total pb-6 md:pb-10 lg:pb-0 pt-6 md:pt-20 lg:pt-6 px-8'>
 				<div className='total'>
 					<span className='desc'>You have to Pay</span>
 					<div className='t-amount'>

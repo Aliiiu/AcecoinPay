@@ -1,8 +1,22 @@
 .checkout {
 	position: relative;
+
+	.blu {
+		display: block;
+		height: 1.5em;
+		width: 5em;
+		background-color: $blue_bg;
+		position: absolute;
+		top: 0em;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
 	.checkout-details {
 		background-color: #f0f3f8;
 		width: 100%;
+		max-width: 400px;
+		margin: 0 auto;
+		position: relative;
 		border-radius: 1em;
 		.purchase-data {
 			.data {
@@ -95,14 +109,14 @@
 		@media (min-width: 640px) {
 			.divider {
 				&::before {
-					bottom: 202px;
+					bottom: 182px;
 				}
 			}
 		}
 		@media (min-width: 1024px) {
 			.divider {
 				&::before {
-					bottom: 144px;
+					bottom: 99px;
 				}
 			}
 		}

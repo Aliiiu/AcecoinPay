@@ -3,7 +3,6 @@ import React from 'react';
 const CreditCard = () => {
 	return (
 		<div>
-			<span className='blu'></span>
 			<div className='credit-card'>
 				<div className='credit-card__head'>
 					<img src='/images/chip.png' alt='' className='chip' />
