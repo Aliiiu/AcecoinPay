@@ -33,6 +33,7 @@ This is an attempt to the UI design shared for the test
 - React
 - SCSS
 - TypeScript
+- TailwindCSS
 
 ## Author
 
