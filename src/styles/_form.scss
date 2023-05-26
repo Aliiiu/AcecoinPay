@@ -72,7 +72,7 @@
 					@include setFlex(flex, initial, space-between, column);
 					.grp {
 						@include setFlex(flex, center, space-between, initial);
-						max-width: 400px;
+						width: 100%;
 						.divider {
 							display: block;
 							margin: 0 0.8em;
@@ -83,7 +83,7 @@
 					}
 					.main {
 						margin-top: 0;
-						max-width: 400px;
+						width: 100%;
 						input {
 							padding-right: 0;
 							padding-left: 0;
@@ -111,6 +111,12 @@
 					&.__col {
 						align-items: center;
 						flex-direction: row;
+						.grp {
+							width: 400px;
+						}
+						.main {
+							max-width: 400px;
+						}
 					}
 				}
 			}
