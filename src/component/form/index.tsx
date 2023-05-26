@@ -26,7 +26,10 @@ const Form = () => {
 					placeholder='************'
 					type='password'
 				/>
-				<button type='submit' className='btn_submit'>
+				<button
+					type='submit'
+					className='btn_submit py-3 md:py-4 lg:py-5 bg-blue01 box-border capitalize font-medium'
+				>
 					pay now
 				</button>
 			</form>

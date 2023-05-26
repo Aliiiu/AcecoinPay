@@ -9,14 +9,14 @@ This is an attempt to the UI design shared for the test
 #### Mobile
 
 <div style="display:flex; flex-wrap:wrap ">
-<img src="./public/images/mobile_1.png" width='400px'>
+<img src="./public/images/mobileView.png" width='400px'>
 
-<img src="./public/images/mobile_2.png" width='400px'> 
+<img src="./public/images/mobileView_2.png" width='400px'> 
 </div>
 
 #### Tablet
 
-<img src="./public/images/tabView.png" >
+<img src="./public/images/tabletView.png" >
 
 #### Desktop
 
