@@ -3,7 +3,7 @@ export const checkoutData = [
 		id: 1,
 		title: 'company',
 		showImg: true,
-		desc: 'desc',
+		desc: 'apple',
 	},
 	{
 		id: 2,
