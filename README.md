@@ -17,6 +17,7 @@ This is an attempt to the UI design shared for the test
 #### Tablet
 
 <img src="./public/images/tabletView.png" >
+<img src="./public/images/tabletView_2.png" >
 
 #### Desktop
 
