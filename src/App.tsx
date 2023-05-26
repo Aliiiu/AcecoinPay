@@ -1,13 +1,13 @@
 import React from 'react';
 import './styles/index.scss';
 import Header from './component/header';
-import Form from './form';
+import Form from './component/form';
 import Checkout from './component/checkout';
 import Close from './assets/icons/Close';
 
 function App() {
 	return (
-		<div className='container grid grid-cols-12'>
+		<div className='container grid md:grid-cols-12 gap-y-16 md:gap-8'>
 			<button className='close-btn'>
 				<Close />
 			</button>

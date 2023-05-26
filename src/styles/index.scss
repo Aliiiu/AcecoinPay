@@ -22,11 +22,10 @@ body {
 	margin: 0 auto;
 	background-color: white;
 	position: relative;
-	font-weight: $poppins;
-	padding: 3em;
-	padding-top: 5em;
-	margin-top: 6em;
-	margin-bottom: 6em;
+	font-family: $poppins;
+	padding: 1.5em;
+	padding-top: 3em;
+	height: 100%;
 
 	.close-btn {
 		position: absolute;
@@ -41,6 +40,15 @@ body {
 		svg {
 			height: 1.5em;
 		}
+	}
+	@media (min-width: 640px) {
+		margin-top: 6em;
+	}
+	@media (min-width: 1024px) {
+		padding: 3em;
+		padding-top: 5em;
+		margin-top: 6em;
+		margin-bottom: 6em;
 	}
 }
 

@@ -1,11 +1,9 @@
 import React from 'react';
-import CreditCard from './CreditCard';
 import CheckoutDetails from './CheckoutDetails';
 
 const Checkout = () => {
 	return (
-		<div className='checkout'>
-			<CreditCard />
+		<div className='checkout pt-32 h-full'>
 			<CheckoutDetails />
 		</div>
 	);

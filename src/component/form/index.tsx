@@ -3,7 +3,7 @@ import {
 	CustomDateField,
 	PinInputField,
 	TextField,
-} from '../component/widget/form/FormComponent';
+} from '../widget/form/FormComponent';
 
 const Form = () => {
 	return (

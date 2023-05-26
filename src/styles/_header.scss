@@ -1,19 +1,19 @@
 .form {
 	&-header {
 		@include setFlex(flex, center, space-between, initial);
-		margin-bottom: 5em;
+		margin-bottom: 3em;
 		.logo {
 			@include setFlex(flex, center, space-between, initial);
 			&-circle {
-				height: 3em;
-				width: 3em;
+				height: 2em;
+				width: 2em;
 				display: block;
 				background-color: $blue_bg;
 				border-radius: 50%;
 			}
 			h1 {
 				font-weight: 600;
-				font-size: 1.75em;
+				font-size: 1.5em;
 				margin-left: 0.6em;
 				color: $text_one;
 				.light {
@@ -22,13 +22,13 @@
 			}
 		}
 		.timer {
-			font-size: 1.35em;
+			font-size: 1em;
 			font-weight: 500;
 			&-box {
 				background-color: $dark_bg;
 				color: white;
-				height: 1.9em;
-				width: 1.3em;
+				height: 1.5em;
+				width: 1em;
 				@include setFlex(inline-flex, center, center, initial);
 				border-radius: 4px;
 				margin-left: 4px;
@@ -36,6 +36,25 @@
 			&-divider {
 				position: relative;
 				right: -2px;
+			}
+		}
+		@media (min-width: 1024px) {
+			margin-bottom: 5em;
+			.logo {
+				&-circle {
+					height: 3em;
+					width: 3em;
+				}
+				h1 {
+					font-size: 1.75em;
+				}
+			}
+			.timer {
+				font-size: 1.35em;
+				&-box {
+					height: 1.9em;
+					width: 1.3em;
+				}
 			}
 		}
 	}

@@ -1,40 +1,27 @@
 import React from 'react';
+import CreditCard from './CreditCard';
+import CheckoutList from './CheckoutList';
+import { checkoutData } from '../../constant/checkoutData';
 
 const CheckoutDetails = () => {
 	return (
-		<div className='checkout-details'>
-			<div className='purchase-data'>
-				<div className='data'>
-					<span className='title'>company</span>
-					<span className='value'>
-						<img src='/svgs/apple-13.svg' alt='' />
-						<span className='inner-text'>apple</span>
-					</span>
-				</div>
-				<div className='data'>
-					<span className='title'>order number</span>
-					<span className='value'>
-						<span className='inner-text'>1266201</span>
-					</span>
-				</div>
-				<div className='data'>
-					<span className='title'>product</span>
-					<span className='value'>
-						<span className='inner-text'>macbook air</span>
-					</span>
-				</div>
-				<div className='data'>
-					<span className='title'>VAT (20%)</span>
-					<span className='value'>
-						<span className='inner-text'>$100.00</span>
-					</span>
-				</div>
+		<div className='checkout-details h-full'>
+			<CreditCard />
+			<div className='purchase-data -mt-20 md:mt-4 lg:-mt-16 px-8'>
+				{checkoutData.map((item) => (
+					<CheckoutList
+						key={item.id}
+						title={item.title}
+						desc={item.desc}
+						showImg={item.showImg}
+					/>
+				))}
 			</div>
-			<div className='divider'>
+			<div className='divider mt-8 md:mt-20 lg:mt-12'>
 				<div className='left'></div>
 				<div className='right'></div>
 			</div>
-			<div className='purchase-total'>
+			<div className='purchase-total pb-6 md:pb-0 pt-6 md:pt-20 lg:pt-6 px-8'>
 				<div className='total'>
 					<span className='desc'>You have to Pay</span>
 					<div className='t-amount'>

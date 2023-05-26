@@ -1,15 +1,10 @@
 .checkout {
+	position: relative;
 	.checkout-details {
 		background-color: #f0f3f8;
-		height: 82%;
 		width: 100%;
 		border-radius: 1em;
-		position: absolute;
-		bottom: 0;
 		.purchase-data {
-			position: relative;
-			top: 15.5em;
-			padding: 2em;
 			.data {
 				@include setFlex(flex, center, space-between, initial);
 				text-transform: capitalize;
@@ -34,8 +29,6 @@
 			}
 		}
 		.divider {
-			position: absolute;
-			bottom: 9.4em;
 			width: 100%;
 			border: 4px dashed #cbcbcb;
 			display: flex;
@@ -49,11 +42,9 @@
 				border-radius: 50%;
 			}
 			.left {
-				bottom: -15px;
 				left: -25px;
 			}
 			.right {
-				bottom: -15px;
 				right: -25px;
 			}
 			&::before {
@@ -61,16 +52,13 @@
 				display: block;
 				position: absolute;
 				width: 100%;
-				height: 2em;
+				height: 1em;
 				background-color: #f0f3f8;
-				bottom: -30px;
+				bottom: 111px;
 			}
 		}
 		.purchase-total {
-			position: absolute;
-			bottom: 2.4em;
 			width: 100%;
-			padding: 0 2em;
 			@include setFlex(flex, center, space-between, initial);
 			.total {
 				.desc {
@@ -102,6 +90,20 @@
 			}
 			img {
 				height: 2.6em;
+			}
+		}
+		@media (min-width: 640px) {
+			.divider {
+				&::before {
+					bottom: 202px;
+				}
+			}
+		}
+		@media (min-width: 1024px) {
+			.divider {
+				&::before {
+					bottom: 144px;
+				}
 			}
 		}
 	}
